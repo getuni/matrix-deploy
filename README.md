@@ -34,7 +34,7 @@ x86 server(this doc supports this architecture) - you can spin one yourself in [
   | A Record | @ | <server_ip_address> |
   | A Record | www | <server_ip_address> |
   | A Record | matrix | <server_ip_address> |
-  | CNAME Record | element | matrix.<domain> |
+  | CNAME Record | element | matrix.<your_domain> |
 
 - To setup extra features, such as voice/video chat, this [guide](https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-dns.md#dns-settings-for-optional-servicesfeatures) is quite exhaustive with necessary dns configs to unlock extra of those ✌️ .
  
