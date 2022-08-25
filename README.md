@@ -29,12 +29,12 @@ x86 server(this doc supports this architecture) - you can spin one yourself in [
 [Domain](https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-dns.md#configuring-your-dns-server)
 - Your matrix server url will be like `https:matrix.<your_domain>.com`, so it looks like we need to do domain shopping before proceeding. If you looks at the url, `matrix` is a subdomain. So this [guide](https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-dns.md#dns-settings-for-services-enabled-by-default) will definitely get setup you up with necessary dns configurations. `element` subdomain will be where element UI will be installed and be able to access your matrix server from the browser. At the end of this doc you'll have access to your matrix server at `https://element.<your_domain>`.
 - I went extra and this how my dns configs look like:
-  - | Type | Host | Target |
-  - | -----|------|--------|
-  - | A Record | @ | <server_ip_address> |
-  - | A Record | www | <server_ip_address> |
-  - | A Record | matrix | <server_ip_address> |
-  - | CNAME Record | element | matrix.<domain> |
+  | Type | Host | Target |
+  | -----|------|--------|
+  | A Record | @ | <server_ip_address> |
+  | A Record | www | <server_ip_address> |
+  | A Record | matrix | <server_ip_address> |
+  | CNAME Record | element | matrix.<domain> |
 
 - To setup extra features, such as voice/video chat, this [guide](https://github.com/spantaleev/matrix-docker-ansible-deploy/blob/master/docs/configuring-dns.md#dns-settings-for-optional-servicesfeatures) is quite exhaustive with necessary dns configs to unlock extra of those ✌️ .
  
